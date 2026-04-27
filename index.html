@@ -1,0 +1,1425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lose Belly Fat Without the Gym – Move & Burn</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF7F2;
+    --sand: #F0EAE0;
+    --terracotta: #C96A3A;
+    --terracotta-light: #E8825A;
+    --dark: #1A1410;
+    --charcoal: #3D342C;
+    --warm-gray: #8A7E74;
+    --accent-green: #4A7C5F;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 24px 80px;
+    position: relative;
+    background: var(--dark);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 30%, rgba(201,106,58,0.25) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 20% 80%, rgba(74,124,95,0.15) 0%, transparent 50%);
+  }
+
+  .hero-inner {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: rgba(201,106,58,0.2);
+    border: 1px solid rgba(201,106,58,0.5);
+    color: var(--terracotta-light);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 8vw, 4rem);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--terracotta-light);
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.65);
+    max-width: 480px;
+    margin: 0 auto 40px;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--terracotta);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    padding: 18px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 32px rgba(201,106,58,0.4);
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+
+  .cta-btn:hover {
+    background: var(--terracotta-light);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(201,106,58,0.5);
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.35);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    animation: fadeUp 0.6s 0.5s ease both;
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  /* ─── STATS BAR ─── */
+  .stats {
+    background: var(--white);
+    border-bottom: 1px solid var(--sand);
+    padding: 24px;
+  }
+
+  .stats-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--warm-gray);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* ─── SECTIONS ─── */
+  section {
+    padding: 72px 24px;
+  }
+
+  .section-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  /* ─── PROBLEM ─── */
+  .problem {
+    background: var(--sand);
+  }
+
+  .problem-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 28px 0;
+  }
+
+  .problem-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .problem-list li .icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .problem-close {
+    margin-top: 24px;
+    font-size: 1rem;
+    color: var(--charcoal);
+    font-weight: 500;
+    background: rgba(201,106,58,0.08);
+    border-left: 3px solid var(--terracotta);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* ─── SOLUTION ─── */
+  .solution {
+    background: var(--white);
+  }
+
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 28px 0;
+  }
+
+  .comp-col {
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  .comp-col.no {
+    background: #FEF2EE;
+    border: 1px solid #F8CCBB;
+  }
+
+  .comp-col.yes {
+    background: #EEFAF2;
+    border: 1px solid #BDDECE;
+  }
+
+  .comp-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .comp-col.no .comp-title { color: #C0473A; }
+  .comp-col.yes .comp-title { color: var(--accent-green); }
+
+  .comp-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+
+  .comp-col li::before {
+    margin-right: 8px;
+  }
+
+  .comp-col.no li::before { content: '✗'; color: #C0473A; }
+  .comp-col.yes li::before { content: '✓'; color: var(--accent-green); }
+
+  /* ─── QUICK ROUTINE ─── */
+  .routine {
+    background: var(--cream);
+  }
+
+  .routine-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 28px 0;
+  }
+
+  .routine-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    border-radius: 14px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--terracotta);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .routine-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .routine-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201,106,58,0.08);
+    border-radius: 12px;
+  }
+
+  .routine-info h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 2px;
+  }
+
+  .routine-info p {
+    font-size: 0.85rem;
+    color: var(--warm-gray);
+  }
+
+  .routine-time {
+    margin-left: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    white-space: nowrap;
+  }
+
+  .routine-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    margin-top: 16px;
+  }
+
+  /* ─── SPORTS ─── */
+  .sports {
+    background: var(--dark);
+    color: var(--white);
+  }
+
+  .sports h2 {
+    color: var(--white);
+  }
+
+  .sports-sub {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 32px;
+  }
+
+  .sports-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .sport-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 20px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .sport-card:hover {
+    background: rgba(201,106,58,0.12);
+    border-color: rgba(201,106,58,0.3);
+  }
+
+  .sport-emoji {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .sport-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    color: var(--white);
+  }
+
+  .sport-cal {
+    font-size: 0.8rem;
+    color: var(--terracotta-light);
+  }
+
+  /* ─── GEAR ─── */
+  .gear {
+    background: var(--white);
+  }
+
+  .gear-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 28px 0;
+  }
+
+  .gear-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border: 1px solid var(--sand);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--dark);
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .gear-item:hover {
+    border-color: var(--terracotta);
+    background: rgba(201,106,58,0.03);
+  }
+
+  .gear-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .gear-emoji {
+    font-size: 1.5rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--sand);
+    border-radius: 10px;
+  }
+
+  .gear-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .gear-desc {
+    font-size: 0.8rem;
+    color: var(--warm-gray);
+    margin-top: 2px;
+  }
+
+  .gear-link {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--terracotta);
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  /* ─── OFFER ─── */
+  .offer {
+    background: linear-gradient(135deg, var(--dark) 0%, #2A1F18 100%);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .offer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,106,58,0.2) 0%, transparent 60%);
+  }
+
+  .offer .section-inner {
+    position: relative;
+  }
+
+  .offer h2 {
+    color: var(--white);
+  }
+
+  .offer-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 36px 32px;
+    margin: 32px 0;
+    text-align: left;
+  }
+
+  .offer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--terracotta-light);
+    margin-bottom: 20px;
+  }
+
+  .offer-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .offer-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .offer-features li::before {
+    content: '✓';
+    width: 22px;
+    height: 22px;
+    background: var(--terracotta);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+    color: var(--white);
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .offer-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .price-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--white);
+  }
+
+  .price-note {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .cta-btn-large {
+    display: block;
+    background: var(--terracotta);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    padding: 20px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 32px rgba(201,106,58,0.5);
+  }
+
+  .cta-btn-large:hover {
+    background: var(--terracotta-light);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 48px rgba(201,106,58,0.6);
+  }
+
+  .offer-guarantee {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ─── FREEBIE ─── */
+  .freebie {
+    background: #EEFAF2;
+    border-top: 1px solid #BDDECE;
+    border-bottom: 1px solid #BDDECE;
+    text-align: center;
+    padding: 56px 24px;
+  }
+
+  .freebie h2 {
+    color: var(--dark);
+  }
+
+  .freebie p {
+    color: var(--charcoal);
+    margin-bottom: 28px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .freebie-form {
+    display: flex;
+    gap: 12px;
+    max-width: 440px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .freebie-form input {
+    flex: 1;
+    min-width: 220px;
+    padding: 14px 20px;
+    border: 1.5px solid #BDDECE;
+    border-radius: 100px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    background: var(--white);
+    color: var(--dark);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .freebie-form input:focus {
+    border-color: var(--accent-green);
+  }
+
+  .freebie-form button {
+    padding: 14px 28px;
+    background: var(--accent-green);
+    color: var(--white);
+    border: none;
+    border-radius: 100px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .freebie-form button:hover {
+    background: #3A6B4F;
+    transform: translateY(-1px);
+  }
+
+  .freebie-note {
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--warm-gray);
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 13px;
+  }
+
+  footer a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; }
+    50%       { opacity: 0.8; }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 500px) {
+    .comparison { grid-template-columns: 1fr; }
+    .sports-grid { grid-template-columns: 1fr 1fr; }
+    .routine-time { display: none; }
+    .offer-card { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">🔥 Free Daily Program</span>
+    <h1>Lose Belly Fat<br><em>Without the Gym</em></h1>
+    <p class="hero-sub">Fun multi-sport routines for beginners — no equipment needed. Start seeing real results in a few weeks.</p>
+    <a href="#program" class="cta-btn">👇 Get the Full Program</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <span class="stat-num">30</span>
+      <span class="stat-label">Day Plan</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">15min</span>
+      <span class="stat-label">Per Session</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">0€</span>
+      <span class="stat-label">Equipment</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">5+</span>
+      <span class="stat-label">Sports Mixed</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ PROBLEM ══════════ -->
+<section class="problem">
+  <div class="section-inner reveal">
+    <div class="section-tag">Sound familiar?</div>
+    <h2>Why you're not losing belly fat</h2>
+    <ul class="problem-list">
+      <li>
+        <span class="icon">😤</span>
+        <span>You do random workouts but never see any real change on your belly</span>
+      </li>
+      <li>
+        <span class="icon">🏋️</span>
+        <span>You think you need a gym or expensive equipment to get results</span>
+      </li>
+      <li>
+        <span class="icon">📉</span>
+        <span>You start motivated but quit after 2 weeks because it gets boring</span>
+      </li>
+      <li>
+        <span class="icon">🤷</span>
+        <span>You don't have a structured plan — just random exercises with no direction</span>
+      </li>
+    </ul>
+    <div class="problem-close">
+      👉 <strong>The problem isn't you.</strong> It's the lack of a clear, fun, structured routine.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SOLUTION ══════════ -->
+<section class="solution">
+  <div class="section-inner reveal">
+    <div class="section-tag">The truth</div>
+    <h2>You don't need what you think you need</h2>
+    <div class="comparison">
+      <div class="comp-col no">
+        <div class="comp-title">❌ You DON'T need</div>
+        <ul>
+          <li>a gym membership</li>
+          <li>expensive equipment</li>
+          <li>extreme diets</li>
+          <li>one single sport</li>
+          <li>2 hours per day</li>
+        </ul>
+      </div>
+      <div class="comp-col yes">
+        <div class="comp-title">✅ You DO need</div>
+        <ul>
+          <li>a simple plan</li>
+          <li>varied activities</li>
+          <li>15–20 min/day</li>
+          <li>consistency</li>
+          <li>to have fun</li>
+        </ul>
+      </div>
+    </div>
+    <p style="color:var(--charcoal);">The key to losing belly fat long-term is <strong>variety + consistency</strong>. When you mix sports, you stay motivated, develop your fitness, and burn more calories overall.</p>
+  </div>
+</section>
+
+<!-- ══════════ FULL WORKOUT + TIMER ══════════ -->
+<section class="routine" id="free-workout">
+  <div class="section-inner reveal">
+    <div class="section-tag">🎁 Free Full Workout</div>
+    <h2>Your complete fat-burning session</h2>
+    <p style="color:var(--charcoal);margin-bottom:32px;">A full <strong>40-minute session</strong> — warm-up, high-intensity training, and stretching. Use the interactive timer below to follow along.</p>
+
+    <!-- TIMER WIDGET -->
+    <div id="timer-widget" style="background:var(--dark);border-radius:20px;padding:28px 24px;margin-bottom:36px;color:var(--white);">
+
+      <!-- Phase label -->
+      <div style="text-align:center;margin-bottom:6px;">
+        <span id="phase-label" style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--terracotta-light);">WARM-UP</span>
+      </div>
+
+      <!-- Exercise name -->
+      <div style="text-align:center;margin-bottom:4px;">
+        <span id="exercise-name" style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--white);">Hopping in place</span>
+      </div>
+
+      <!-- Exercise description -->
+      <div style="text-align:center;margin-bottom:20px;min-height:22px;">
+        <span id="exercise-desc" style="font-size:0.82rem;color:rgba(255,255,255,0.5);">Low intensity – get your body moving</span>
+      </div>
+
+      <!-- Circular timer -->
+      <div style="display:flex;justify-content:center;margin-bottom:20px;">
+        <div style="position:relative;width:140px;height:140px;">
+          <svg width="140" height="140" style="transform:rotate(-90deg);">
+            <circle cx="70" cy="70" r="60" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8"/>
+            <circle id="timer-ring" cx="70" cy="70" r="60" fill="none" stroke="var(--terracotta)" stroke-width="8"
+              stroke-dasharray="377" stroke-dashoffset="0" stroke-linecap="round"
+              style="transition:stroke-dashoffset 0.9s linear,stroke 0.3s;"/>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+            <span id="timer-display" style="font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:900;color:var(--white);line-height:1;">20</span>
+            <span id="timer-unit" style="font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;">sec</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Round indicator (training only) -->
+      <div id="round-display" style="text-align:center;margin-bottom:16px;font-size:0.85rem;color:rgba(255,255,255,0.45);display:none;">
+        Round <span id="round-num">1</span> / 4
+      </div>
+
+      <!-- Progress bar -->
+      <div style="background:rgba(255,255,255,0.08);border-radius:100px;height:4px;margin-bottom:20px;">
+        <div id="progress-bar" style="height:4px;background:var(--terracotta);border-radius:100px;width:0%;transition:width 0.5s ease;"></div>
+      </div>
+
+      <!-- Next exercise -->
+      <div style="text-align:center;margin-bottom:20px;min-height:18px;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;">Up next: </span>
+        <span id="next-exercise" style="font-size:11px;color:rgba(255,255,255,0.55);">Jumping Jacks</span>
+      </div>
+
+      <!-- Controls -->
+      <div style="display:flex;justify-content:center;gap:12px;">
+        <button id="btn-start" onclick="timerStart()" style="background:var(--terracotta);color:var(--white);border:none;border-radius:100px;padding:14px 36px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;transition:background 0.2s,transform 0.2s;box-shadow:0 6px 24px rgba(201,106,58,0.4);">▶ Start</button>
+        <button id="btn-pause" onclick="timerPause()" style="display:none;background:rgba(255,255,255,0.1);color:var(--white);border:1px solid rgba(255,255,255,0.2);border-radius:100px;padding:14px 28px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:1rem;cursor:pointer;">⏸ Pause</button>
+        <button id="btn-reset" onclick="timerReset()" style="display:none;background:transparent;color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.15);border-radius:100px;padding:14px 20px;font-family:'DM Sans',sans-serif;font-size:0.9rem;cursor:pointer;">↺</button>
+      </div>
+
+      <!-- Finished message -->
+      <div id="timer-finished" style="display:none;text-align:center;padding:20px 0 0;">
+        <div style="font-size:2rem;margin-bottom:8px;">🎉</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:6px;">Workout complete!</div>
+        <div style="font-size:0.9rem;color:rgba(255,255,255,0.5);">Great job. Rest and come back stronger tomorrow.</div>
+      </div>
+    </div>
+
+    <!-- WORKOUT PLAN WRITTEN OUT -->
+    <!-- WARM UP -->
+    <div style="margin-bottom:28px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <span style="background:rgba(201,106,58,0.15);color:var(--terracotta);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:5px 12px;border-radius:100px;">🌅 Warm-Up · 5 min · Low–Medium intensity</span>
+      </div>
+      <div style="background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05);">
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🦘</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Hopping in place</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">20 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">⭐</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Jumping Jacks</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">20 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🍶</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Water bottle raise</div><div style="font-size:0.75rem;color:var(--warm-gray);">Alternate left & right hand</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">20 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🧘</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Plank</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">20 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;">
+          <span style="font-size:1.2rem;">😮‍💨</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Rest</div></div>
+          <span style="font-size:0.8rem;color:var(--warm-gray);font-weight:600;white-space:nowrap;">20 sec</span>
+        </div>
+      </div>
+      <p style="font-size:0.8rem;color:var(--warm-gray);margin-top:8px;padding-left:4px;">🔁 Repeat 3 times · Then take 90 sec to hydrate before training</p>
+    </div>
+
+    <!-- TRAINING -->
+    <div style="margin-bottom:28px;">
+      <div style="margin-bottom:14px;">
+        <span style="background:rgba(201,106,58,0.15);color:var(--terracotta);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:5px 12px;border-radius:100px;">🔥 Training · 32 min · High Intensity · 4 Rounds</span>
+      </div>
+      <div style="background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05);">
+        <div style="background:var(--terracotta);color:var(--white);padding:8px 18px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;display:flex;justify-content:space-between;"><span>Exercise</span><span>Work / Rest</span></div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">💥</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Burpees</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🧗</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Mountain Climbers</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🦵</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Jump Squats</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">💪</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Push-ups <span style="font-weight:400;color:var(--warm-gray)">(or Knee Push-ups)</span></div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🏃</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">High Knees</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🏋️</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Plank Jacks</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;">
+          <span style="font-size:1.2rem;">👣</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Side-Step Toe Touch</div></div>
+          <span style="font-size:0.8rem;color:var(--terracotta);font-weight:600;white-space:nowrap;">45s / 15s</span>
+        </div>
+      </div>
+      <p style="font-size:0.8rem;color:var(--warm-gray);margin-top:8px;padding-left:4px;">🔁 4 rounds total · 60 sec rest + hydrate between rounds · Then 90 sec hydration break before stretching</p>
+    </div>
+
+    <!-- STRETCHING -->
+    <div style="margin-bottom:28px;">
+      <div style="margin-bottom:14px;">
+        <span style="background:rgba(74,124,95,0.12);color:var(--accent-green);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:5px 12px;border-radius:100px;">🌿 Stretching · 3 min · Hold 30 sec each</span>
+      </div>
+      <div style="background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.05);">
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🐕</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Downward-Facing Dog</div><div style="font-size:0.75rem;color:var(--warm-gray);">Stretches calves, hamstrings & back</div></div>
+          <span style="font-size:0.8rem;color:var(--accent-green);font-weight:600;white-space:nowrap;">30 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🦵</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Low Lunge — Right</div><div style="font-size:0.75rem;color:var(--warm-gray);">Releases hip flexors & psoas</div></div>
+          <span style="font-size:0.8rem;color:var(--accent-green);font-weight:600;white-space:nowrap;">30 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🦵</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Low Lunge — Left</div><div style="font-size:0.75rem;color:var(--warm-gray);">Releases hip flexors & psoas</div></div>
+          <span style="font-size:0.8rem;color:var(--accent-green);font-weight:600;white-space:nowrap;">30 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🏃</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Standing Quad Stretch — Right</div><div style="font-size:0.75rem;color:var(--warm-gray);">Pull foot to glutes</div></div>
+          <span style="font-size:0.8rem;color:var(--accent-green);font-weight:600;white-space:nowrap;">30 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--sand);">
+          <span style="font-size:1.2rem;">🏃</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Standing Quad Stretch — Left</div><div style="font-size:0.75rem;color:var(--warm-gray);">Pull foot to glutes</div></div>
+          <span style="font-size:0.8rem;color:var(--accent-green);font-weight:600;white-space:nowrap;">30 sec</span>
+        </div>
+        <div class="workout-row" style="display:flex;align-items:center;gap:14px;padding:14px 18px;">
+          <span style="font-size:1.2rem;">🙏</span>
+          <div style="flex:1;"><div style="font-weight:600;font-size:0.9rem;">Child's Pose</div><div style="font-size:0.75rem;color:var(--warm-gray);">Calms nervous system, relaxes spine</div></div>
+          <span style="font-size:0.8rem;color:var(--accent-green);font-weight:600;white-space:nowrap;">30 sec</span>
+        </div>
+      </div>
+      <p style="font-size:0.8rem;color:var(--warm-gray);margin-top:8px;padding-left:4px;">💡 Never push into pain — stretching should feel like a gentle release.</p>
+    </div>
+
+    <p class="routine-note" style="margin-bottom:24px;">⚡ Total: ~40 minutes — a complete session to burn fat and feel great</p>
+    <p style="color:var(--charcoal);font-size:0.9rem;">👇 <strong>Want the full 30-day structured plan with progressions, sport variations, and weekly targets?</strong></p>
+    <br>
+    <a href="#program" class="cta-btn" style="display:inline-block;">See the Full Program →</a>
+  </div>
+</section>
+
+<style>
+/* Timer widget button hover */
+#btn-start:hover { background: var(--terracotta-light) !important; transform: translateY(-1px); }
+#btn-pause:hover { background: rgba(255,255,255,0.18) !important; }
+</style>
+
+<script>
+// ── WORKOUT SEQUENCE ──────────────────────────────────────────
+const WARMUP_EXERCISES = [
+  { name: 'Hopping in place',     desc: 'Low intensity – get your body moving',      duration: 20, phase: 'WARM-UP', color: '#E8825A' },
+  { name: 'Jumping Jacks',        desc: 'Keep it light and rhythmic',                duration: 20, phase: 'WARM-UP', color: '#E8825A' },
+  { name: 'Water bottle raise',   desc: 'Right hand up, then left hand up',          duration: 20, phase: 'WARM-UP', color: '#E8825A' },
+  { name: 'Plank',                desc: 'Hold steady, breathe deeply',               duration: 20, phase: 'WARM-UP', color: '#E8825A' },
+  { name: 'Rest',                 desc: 'Catch your breath before next round',       duration: 20, phase: 'WARM-UP', color: '#6B7280' },
+];
+
+const TRAINING_EXERCISES = [
+  { name: 'Burpees',              desc: 'Full body – go explosive!',                 duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Rest',                 desc: 'Breathe – next up: Mountain Climbers',      duration: 15, isRest: true,  phase: 'TRAINING 🔥', color: '#6B7280' },
+  { name: 'Mountain Climbers',    desc: 'Drive your knees fast!',                    duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Rest',                 desc: 'Breathe – next up: Jump Squats',            duration: 15, isRest: true,  phase: 'TRAINING 🔥', color: '#6B7280' },
+  { name: 'Jump Squats',          desc: 'Land soft, jump high!',                     duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Rest',                 desc: 'Breathe – next up: Push-ups',              duration: 15, isRest: true,  phase: 'TRAINING 🔥', color: '#6B7280' },
+  { name: 'Push-ups',             desc: 'Knee push-ups are totally fine!',           duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Rest',                 desc: 'Breathe – next up: High Knees',            duration: 15, isRest: true,  phase: 'TRAINING 🔥', color: '#6B7280' },
+  { name: 'High Knees',           desc: 'Drive those knees up!',                     duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Rest',                 desc: 'Breathe – next up: Plank Jacks',           duration: 15, isRest: true,  phase: 'TRAINING 🔥', color: '#6B7280' },
+  { name: 'Plank Jacks',          desc: 'Core tight, feet wide then together!',      duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Rest',                 desc: 'Breathe – next up: Side-Step Toe Touch',   duration: 15, isRest: true,  phase: 'TRAINING 🔥', color: '#6B7280' },
+  { name: 'Side-Step Toe Touch',  desc: 'Control the movement, feel the stretch',   duration: 45, isRest: false, phase: 'TRAINING 🔥', color: '#C96A3A' },
+  { name: 'Round rest + hydrate', desc: 'Great work! Drink water. Next round soon.', duration: 60, isRest: true,  phase: 'TRAINING 🔥', color: '#4A7C5F' },
+];
+
+const STRETCH_EXERCISES = [
+  { name: 'Downward-Facing Dog',         desc: 'Calves, hamstrings & back',    duration: 30, phase: 'STRETCHING 🌿', color: '#4A7C5F' },
+  { name: 'Low Lunge — Right',           desc: 'Hip flexors & psoas',          duration: 30, phase: 'STRETCHING 🌿', color: '#4A7C5F' },
+  { name: 'Low Lunge — Left',            desc: 'Hip flexors & psoas',          duration: 30, phase: 'STRETCHING 🌿', color: '#4A7C5F' },
+  { name: 'Standing Quad — Right',       desc: 'Pull foot up to glutes',       duration: 30, phase: 'STRETCHING 🌿', color: '#4A7C5F' },
+  { name: 'Standing Quad — Left',        desc: 'Pull foot up to glutes',       duration: 30, phase: 'STRETCHING 🌿', color: '#4A7C5F' },
+  { name: "Child's Pose",                desc: 'Breathe deep, fully relax',    duration: 30, phase: 'STRETCHING 🌿', color: '#4A7C5F' },
+];
+
+// Build full sequence: warmup x3, hydrate, training x4, hydrate, stretch
+function buildSequence() {
+  const seq = [];
+  // Warm-up x3
+  for (let r = 0; r < 3; r++) {
+    WARMUP_EXERCISES.forEach(e => seq.push({ ...e, warmupRound: r + 1 }));
+  }
+  // Hydrate 90s
+  seq.push({ name: 'Hydrate!', desc: 'Take 90 sec before starting training', duration: 90, phase: 'HYDRATION 💧', color: '#4A7C5F', isHydrate: true });
+  // Training x4
+  for (let r = 0; r < 4; r++) {
+    TRAINING_EXERCISES.forEach((e, i) => {
+      // Skip round rest on last round's last item
+      if (r === 3 && e.name === 'Round rest + hydrate') {
+        seq.push({ name: 'Hydrate!', desc: 'Training complete! Drink water, then stretch.', duration: 90, phase: 'HYDRATION 💧', color: '#4A7C5F', isHydrate: true, trainingRound: r + 1 });
+      } else {
+        seq.push({ ...e, trainingRound: r + 1 });
+      }
+    });
+  }
+  // Stretching
+  STRETCH_EXERCISES.forEach(e => seq.push({ ...e }));
+  // Done
+  seq.push({ name: 'Done! 🎉', desc: 'Amazing session. Rest and recover.', duration: 0, phase: 'COMPLETE', color: '#4A7C5F', isFinal: true });
+  return seq;
+}
+
+const sequence = buildSequence();
+let currentIdx = 0;
+let timeLeft = 0;
+let intervalId = null;
+let running = false;
+const TOTAL_STEPS = sequence.length;
+
+// Audio beep using Web Audio API
+function playBeep(type = 'change') {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    if (type === 'change') {
+      osc.frequency.setValueAtTime(880, ctx.currentTime);
+      gain.gain.setValueAtTime(0.3, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.3);
+    } else if (type === 'warning') {
+      osc.frequency.setValueAtTime(660, ctx.currentTime);
+      gain.gain.setValueAtTime(0.2, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.15);
+    } else if (type === 'done') {
+      // Three ascending beeps
+      [523, 659, 784].forEach((freq, i) => {
+        const o2 = ctx.createOscillator();
+        const g2 = ctx.createGain();
+        o2.connect(g2); g2.connect(ctx.destination);
+        o2.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.18);
+        g2.gain.setValueAtTime(0.3, ctx.currentTime + i * 0.18);
+        g2.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.18 + 0.25);
+        o2.start(ctx.currentTime + i * 0.18);
+        o2.stop(ctx.currentTime + i * 0.18 + 0.25);
+      });
+    }
+  } catch(e) {}
+}
+
+function updateUI() {
+  const step = sequence[currentIdx];
+  if (!step) return;
+
+  document.getElementById('phase-label').textContent = step.phase;
+  document.getElementById('exercise-name').textContent = step.name;
+  document.getElementById('exercise-desc').textContent = step.desc;
+  document.getElementById('timer-display').textContent = timeLeft;
+  document.getElementById('timer-unit').textContent = timeLeft === 1 ? 'sec' : 'sec';
+
+  // Color ring
+  const ring = document.getElementById('timer-ring');
+  ring.style.stroke = step.color || 'var(--terracotta)';
+
+  // Ring animation
+  const total = step.duration || 1;
+  const circumference = 377;
+  const offset = circumference * (1 - timeLeft / total);
+  ring.style.strokeDashoffset = offset;
+
+  // Progress bar
+  const pct = (currentIdx / (TOTAL_STEPS - 1)) * 100;
+  document.getElementById('progress-bar').style.width = pct + '%';
+
+  // Round display
+  const roundDiv = document.getElementById('round-display');
+  if (step.trainingRound) {
+    roundDiv.style.display = 'block';
+    document.getElementById('round-num').textContent = step.trainingRound;
+  } else {
+    roundDiv.style.display = 'none';
+  }
+
+  // Next exercise
+  const next = sequence[currentIdx + 1];
+  document.getElementById('next-exercise').textContent = next ? next.name : '—';
+
+  // Finished state
+  if (step.isFinal) {
+    document.getElementById('timer-finished').style.display = 'block';
+    document.getElementById('btn-pause').style.display = 'none';
+    document.getElementById('btn-reset').style.display = 'inline-block';
+  }
+}
+
+function timerStart() {
+  if (running) return;
+  running = true;
+  document.getElementById('btn-start').style.display = 'none';
+  document.getElementById('btn-pause').style.display = 'inline-block';
+  document.getElementById('btn-reset').style.display = 'inline-block';
+
+  if (timeLeft === 0) {
+    timeLeft = sequence[currentIdx].duration;
+    updateUI();
+  }
+
+  intervalId = setInterval(() => {
+    if (!running) return;
+    timeLeft--;
+
+    if (timeLeft === 3) playBeep('warning');
+
+    if (timeLeft <= 0) {
+      // Move to next
+      currentIdx++;
+      if (currentIdx >= sequence.length || sequence[currentIdx].isFinal) {
+        clearInterval(intervalId);
+        running = false;
+        playBeep('done');
+        if (currentIdx >= sequence.length) currentIdx = sequence.length - 1;
+        timeLeft = 0;
+        updateUI();
+        return;
+      }
+      playBeep('change');
+      timeLeft = sequence[currentIdx].duration;
+    }
+    updateUI();
+  }, 1000);
+}
+
+function timerPause() {
+  running = false;
+  clearInterval(intervalId);
+  document.getElementById('btn-start').style.display = 'inline-block';
+  document.getElementById('btn-start').textContent = '▶ Resume';
+  document.getElementById('btn-pause').style.display = 'none';
+}
+
+function timerReset() {
+  running = false;
+  clearInterval(intervalId);
+  currentIdx = 0;
+  timeLeft = sequence[0].duration;
+  document.getElementById('btn-start').style.display = 'inline-block';
+  document.getElementById('btn-start').textContent = '▶ Start';
+  document.getElementById('btn-pause').style.display = 'none';
+  document.getElementById('btn-reset').style.display = 'none';
+  document.getElementById('timer-finished').style.display = 'none';
+  document.getElementById('timer-ring').style.strokeDashoffset = 0;
+  document.getElementById('progress-bar').style.width = '0%';
+  updateUI();
+}
+
+// Init display
+timeLeft = sequence[0].duration;
+updateUI();
+</script>
+
+<!-- ══════════ SPORTS ══════════ -->
+<section class="sports">
+  <div class="section-inner reveal">
+    <div class="section-tag" style="color:var(--terracotta-light);">Mix it up</div>
+    <h2>Sports that burn the most belly fat</h2>
+    <p class="sports-sub">Variety is the secret. These are the activities we rotate in the 30-day plan to keep you motivated and maximise results.</p>
+
+    <div class="sports-grid">
+      <div class="sport-card">
+        <div class="sport-emoji">🏃</div>
+        <div class="sport-name">Running</div>
+        <div class="sport-cal">~400 kcal/hr</div>
+      </div>
+      <div class="sport-card">
+        <div class="sport-emoji">🚴</div>
+        <div class="sport-name">Cycling</div>
+        <div class="sport-cal">~380 kcal/hr</div>
+      </div>
+      <div class="sport-card">
+        <div class="sport-emoji">🥊</div>
+        <div class="sport-name">Shadow Boxing</div>
+        <div class="sport-cal">~500 kcal/hr</div>
+      </div>
+      <div class="sport-card">
+        <div class="sport-emoji">🤸</div>
+        <div class="sport-name">HIIT</div>
+        <div class="sport-cal">~600 kcal/hr</div>
+      </div>
+      <div class="sport-card">
+        <div class="sport-emoji">🧘</div>
+        <div class="sport-name">Yoga Flow</div>
+        <div class="sport-cal">~250 kcal/hr</div>
+      </div>
+      <div class="sport-card">
+        <div class="sport-emoji">🏊</div>
+        <div class="sport-name">Swimming</div>
+        <div class="sport-cal">~450 kcal/hr</div>
+      </div>
+    </div>
+
+    <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;">🔥 The 30-day program rotates these sports so you never get bored — and your body keeps adapting and burning more.</p>
+  </div>
+</section>
+
+<!-- ══════════ GEAR (AFFILIATION) ══════════ -->
+<section class="gear">
+  <div class="section-inner reveal">
+    <div class="section-tag">Essential gear</div>
+    <h2>What you actually need<br>(almost nothing)</h2>
+    <p style="color:var(--charcoal);margin-bottom:8px;">You can do most sessions with zero equipment. But these few things make a big difference:</p>
+
+    <div class="gear-items">
+      <a href="#YOUR-AFFILIATE-LINK-1" class="gear-item">
+        <div class="gear-left">
+          <div class="gear-emoji">👟</div>
+          <div>
+            <div class="gear-name">Running Shoes</div>
+            <div class="gear-desc">Comfortable & beginner-friendly</div>
+          </div>
+        </div>
+        <div class="gear-link">View on Amazon →</div>
+      </a>
+
+      <a href="#YOUR-AFFILIATE-LINK-2" class="gear-item">
+        <div class="gear-left">
+          <div class="gear-emoji">🪢</div>
+          <div>
+            <div class="gear-name">Jump Rope</div>
+            <div class="gear-desc">Best cardio tool under 15€</div>
+          </div>
+        </div>
+        <div class="gear-link">View on Amazon →</div>
+      </a>
+
+      <a href="#YOUR-AFFILIATE-LINK-3" class="gear-item">
+        <div class="gear-left">
+          <div class="gear-emoji">🧘</div>
+          <div>
+            <div class="gear-name">Yoga Mat</div>
+            <div class="gear-desc">For core & floor exercises</div>
+          </div>
+        </div>
+        <div class="gear-link">View on Amazon →</div>
+      </a>
+
+      <a href="#YOUR-AFFILIATE-LINK-4" class="gear-item">
+        <div class="gear-left">
+          <div class="gear-emoji">⌚</div>
+          <div>
+            <div class="gear-name">Sport Watch</div>
+            <div class="gear-desc">Track your progress & heart rate</div>
+          </div>
+        </div>
+        <div class="gear-link">View on Amazon →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FREEBIE / EMAIL ══════════ -->
+<section class="freebie" id="freebie">
+  <div class="section-inner reveal">
+    <div class="section-tag" style="color:var(--accent-green);">🎁 100% Free</div>
+    <h2>Get your 7-day<br>flat stomach starter plan</h2>
+    <p>Enter your email and receive a simple 7-day routine to kickstart your transformation — no gym, no equipment, no excuses.</p>
+    <div class="freebie-form">
+      <input type="email" placeholder="your@email.com">
+      <button type="button">Send it →</button>
+    </div>
+    <p class="freebie-note">🔒 No spam. Unsubscribe anytime. 100% free.</p>
+  </div>
+</section>
+
+<!-- ══════════ OFFER ══════════ -->
+<section class="offer" id="program">
+  <div class="section-inner">
+    <div class="section-tag reveal" style="color:var(--terracotta-light);">The full system</div>
+    <h2 class="reveal">Ready to go further?</h2>
+    <p class="reveal" style="color:rgba(255,255,255,0.6);margin-bottom:8px;">The free routine above is a great start. But if you want a real, step-by-step transformation plan — this is it.</p>
+
+    <div class="offer-card reveal">
+      <div class="offer-title">🔥 30-Day Flat Stomach Program</div>
+      <ul class="offer-features">
+        <li>Complete daily plan for 30 days (no guesswork)</li>
+        <li>5+ sports rotated to keep you motivated</li>
+        <li>Beginner-friendly progressions each week</li>
+        <li>Nutrition tips to fuel your results</li>
+        <li>Printable PDF — use it anywhere, anytime</li>
+        <li>No gym, no expensive equipment needed</li>
+      </ul>
+      <div class="offer-price">
+        <span class="price-amount">12€</span>
+        <span class="price-note">one-time — instant download</span>
+      </div>
+      <a href="#YOUR-GUMROAD-LINK" class="cta-btn-large">🚀 Get the Full Program Now</a>
+      <p class="offer-guarantee">📩 Instant download · PDF format · Works on any device</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <p>© 2025 Move & Burn — <a href="#">Pinterest</a></p>
+  <p style="margin-top:6px;">Questions? DM us on Pinterest 📌</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => io.observe(el));
+
+  // Freebie form mock
+  document.querySelector('.freebie-form button').addEventListener('click', function() {
+    const input = document.querySelector('.freebie-form input');
+    if (input.value && input.value.includes('@')) {
+      input.value = '';
+      this.textContent = '✓ Check your inbox!';
+      this.style.background = '#4A7C5F';
+      setTimeout(() => { this.textContent = 'Send it →'; this.style.background = ''; }, 3000);
+    } else {
+      input.style.borderColor = '#C0473A';
+      setTimeout(() => { input.style.borderColor = ''; }, 1500);
+    }
+  });
+</script>
+</body>
+</html>
